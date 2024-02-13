@@ -47,7 +47,6 @@ body {
 }
 
 .hero {
-  background-image: url("/dist/img/hero.svg");
   height: 100vh;
   display: flex;
   justify-content: flex-start;
@@ -56,6 +55,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 0 4rem;
+}
+.hero-top {
+  background-image: url("/dist/img/hero.svg");
+}
+.hero-2nd {
+  background-image: url("/dist/img/hero-2.png");
 }
 .hero-content {
   max-width: 32rem;
@@ -130,7 +135,7 @@ body {
 
 .skin-care-carousel {
   height: 100vh;
-  padding: 0 4rem;
+  padding: 4rem;
 }
 .skin-care-carousel ::-webkit-scrollbar {
   width: 0px;
