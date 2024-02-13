@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.nav-items {
+  gap: 2rem;
+}
+.nav-link:hover {
+  color: gray;
+}
+.nav-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.snackbar {
+  padding: 0.5rem;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
