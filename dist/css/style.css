@@ -1,5 +1,16 @@
+* {
+  font-family: "Arial";
+}
+
 body {
   margin: 0;
+}
+
+.snackbar {
+  padding: 0.5rem;
+  background-color: #333333;
+  color: white;
+  text-align: center;
 }
 
 .nav {
@@ -10,7 +21,11 @@ body {
   padding: 2rem;
 }
 .nav-items {
-  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
 }
 .nav-link:hover {
   color: gray;
@@ -27,11 +42,149 @@ body {
   color: black;
 }
 
-.snackbar {
-  padding: 0.5rem;
-  background-color: #333333;
+.hero {
+  background-image: url("/dist/img/hero.svg");
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 4rem;
+}
+.hero-content {
+  max-width: 32rem;
+  color: #fff;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero-content .discover-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.hero-content .discover-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.product-highlight {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 4rem;
+}
+.product-highlight img {
+  margin: auto 0;
+}
+.product-highlight-content {
+  margin: auto;
+}
+.product-highlight-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.product-highlight-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.product-highlight-content .read-more-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.product-highlight-content .read-more-btn:hover {
   color: white;
+  background-color: gray;
+}
+
+.skin-care-carousel {
+  height: 100vh;
+  padding: 0 4rem;
+}
+.skin-care-carousel ::-webkit-scrollbar {
+  width: 0px;
+}
+.skin-care-carousel ::-webkit-scrollbar-track {
+  background: gray;
+}
+.skin-care-carousel ::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+.skin-care-carousel .media-scroller {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
   text-align: center;
+}
+.skin-care-carousel .media-scroller--with-groups {
+  grid-auto-columns: 80%;
+}
+.skin-care-carousel .media-group {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+}
+.skin-care-carousel .media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 1rem;
+}
+.skin-care-carousel .media-element .atc-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  border: none;
+  color: white;
+  padding: 1rem 0;
+}
+.skin-care-carousel .media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.skin-care-carousel .media-element:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.skin-care-carousel .media-element:hover .atc-button {
+  visibility: visible;
+}
+.skin-care-carousel .snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 2rem;
+}
+.skin-care-carousel .snaps-inline > * {
+  scroll-snap-align: start;
+}
+.skin-care-carousel .product-name {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
