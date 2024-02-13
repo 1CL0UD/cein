@@ -133,20 +133,23 @@ body {
   background-color: gray;
 }
 
-.skin-care-carousel {
+.carousel {
   height: 100vh;
   padding: 4rem;
 }
-.skin-care-carousel ::-webkit-scrollbar {
+.carousel ::-webkit-scrollbar {
   width: 0px;
 }
-.skin-care-carousel ::-webkit-scrollbar-track {
+.carousel ::-webkit-scrollbar-track {
   background: gray;
 }
-.skin-care-carousel ::-webkit-scrollbar-thumb {
+.carousel ::-webkit-scrollbar-thumb {
   background-color: black;
 }
-.skin-care-carousel .media-scroller {
+.carousel .journal {
+  text-align: start;
+}
+.carousel .media-scroller {
   display: grid;
   gap: 1rem;
   grid-auto-flow: column;
@@ -155,46 +158,75 @@ body {
   overscroll-behavior-inline: contain;
   text-align: center;
 }
-.skin-care-carousel .media-scroller--with-groups {
+.carousel .media-scroller--with-groups {
   grid-auto-columns: 80%;
 }
-.skin-care-carousel .media-group {
+.carousel .media-group {
   display: grid;
   gap: 1rem;
   grid-auto-flow: column;
 }
-.skin-care-carousel .media-element {
+.carousel .media-element {
   display: grid;
   grid-template-rows: min-content;
   gap: 1rem;
 }
-.skin-care-carousel .media-element .atc-button {
+.carousel .media-element .atc-button {
   background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
   border: none;
   color: white;
   padding: 1rem 0;
 }
-.skin-care-carousel .media-element > img {
+.carousel .media-element > img {
   inline-size: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
 }
-.skin-care-carousel .media-element:hover {
+.carousel .media-element:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.skin-care-carousel .media-element:hover .atc-button {
+.carousel .media-element:hover .atc-button {
   visibility: visible;
 }
-.skin-care-carousel .snaps-inline {
+.carousel .snaps-inline {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 2rem;
 }
-.skin-care-carousel .snaps-inline > * {
+.carousel .snaps-inline > * {
   scroll-snap-align: start;
 }
-.skin-care-carousel .product-name {
+.carousel .product-name {
   font-weight: bold;
+}
+.carousel .read-more-btn {
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  gap: 1rem;
+}
+.carousel .read-more-btn:hover {
+  color: white;
+  background-color: gray;
+}
+
+.quotes {
+  height: 60vh;
+  background-color: #e8e8dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quotes h1,
+.quotes h3 {
+  font-weight: lighter;
 }
 
 footer {
