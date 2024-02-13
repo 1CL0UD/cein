@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 * {
   font-family: "Arial";
 }
@@ -185,6 +186,46 @@ body {
 }
 .skin-care-carousel .product-name {
   font-weight: bold;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  margin-top: 4rem;
+  padding: 4rem 2rem 2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 16rem;
+}
+.footer-start {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.footer-end {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: start;
+}
+.footer-menus {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  margin-bottom: 4rem;
+}
+.footer-menu {
+  padding: 0 4rem 0 0;
+}
+.footer-copyright {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
