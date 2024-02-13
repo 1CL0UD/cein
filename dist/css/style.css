@@ -94,6 +94,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  gap: 8rem;
   padding: 0 4rem;
 }
 .product-highlight img {
@@ -201,9 +202,8 @@ footer {
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 1rem;
   gap: 16rem;
+  margin-bottom: 1rem;
 }
 .footer-start {
   display: flex;
@@ -219,7 +219,6 @@ footer {
 .footer-menus {
   display: flex;
   flex-direction: row;
-  gap: 6rem;
   margin-bottom: 4rem;
 }
 .footer-menu {
@@ -228,7 +227,7 @@ footer {
 .footer-copyright {
   display: flex;
   flex-direction: row;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

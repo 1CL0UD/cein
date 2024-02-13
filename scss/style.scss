@@ -99,6 +99,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  gap: 8rem;
   padding: 0 4rem;
   img {
     margin: auto 0;
@@ -219,9 +220,8 @@ footer {
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 1rem;
   gap: 16rem;
+  margin-bottom: 1rem;
   &-start {
     display: flex;
     flex-direction: column;
@@ -236,7 +236,6 @@ footer {
   &-menus {
     display: flex;
     flex-direction: row;
-    gap: 6rem;
     margin-bottom: 4rem;
   }
   &-menu {
@@ -245,6 +244,6 @@ footer {
   &-copyright {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 3rem;
   }
 }
