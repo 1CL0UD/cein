@@ -24,6 +24,18 @@ body {
   align-items: center;
   padding: 2rem;
 }
+.nav-toggle {
+  display: none;
+}
+.nav-sidebar {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+.nav-sidebar img {
+  margin: 1rem 0 2rem 0;
+  display: none;
+}
 .nav-items {
   display: flex;
   flex-direction: row;
@@ -44,6 +56,38 @@ body {
 .nav a {
   text-decoration: none;
   color: black;
+}
+@media (max-width: 768px) {
+  .nav .show {
+    display: block;
+  }
+  .nav-sidebar {
+    display: none;
+    align-items: start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    height: 100%;
+    background-color: #e8e8dd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .nav-sidebar img {
+    display: block;
+  }
+  .nav-items {
+    flex-direction: column;
+    align-items: start;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-end i:not(:first-child),
+  .nav-end a {
+    display: none;
+  }
 }
 
 .hero {
