@@ -59,7 +59,7 @@ body {
     color: black;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     .show {
       display: block;
     }
@@ -221,6 +221,12 @@ body {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     text-align: center;
+    @media (max-width: 48rem) {
+      grid-auto-columns: 32%;
+    }
+    @media (max-width: 36rem) {
+      grid-auto-columns: 50%;
+    }
   }
   .media-scroller--with-groups {
     grid-auto-columns: 80%;
@@ -352,32 +358,12 @@ footer {
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  gap: 16rem;
-  margin-bottom: 1rem;
-  &-start {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-  }
-  &-end {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: start;
-  }
-  &-menus {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 4rem;
-  }
-  &-menu {
-    padding: 0 4rem 0 0;
-  }
-  &-copyright {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
+  &-social {
+    div {
+      i {
+        color: white;
+        font-size: 2rem;
+      }
+    }
   }
 }

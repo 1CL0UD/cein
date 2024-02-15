@@ -57,7 +57,7 @@ body {
   text-decoration: none;
   color: black;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .nav .show {
     display: block;
   }
@@ -203,6 +203,16 @@ body {
   overscroll-behavior-inline: contain;
   text-align: center;
 }
+@media (max-width: 48rem) {
+  .carousel .media-scroller {
+    grid-auto-columns: 32%;
+  }
+}
+@media (max-width: 36rem) {
+  .carousel .media-scroller {
+    grid-auto-columns: 50%;
+  }
+}
 .carousel .media-scroller--with-groups {
   grid-auto-columns: 80%;
 }
@@ -322,35 +332,9 @@ footer {
   padding: 4rem 2rem 2rem;
 }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  gap: 16rem;
-  margin-bottom: 1rem;
-}
-.footer-start {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-.footer-end {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  align-items: start;
-}
-.footer-menus {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 4rem;
-}
-.footer-menu {
-  padding: 0 4rem 0 0;
-}
-.footer-copyright {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
+.footer-social div i {
+  color: white;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
